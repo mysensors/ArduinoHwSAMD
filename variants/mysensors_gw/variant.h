@@ -231,6 +231,8 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define MY_RF69_SPI_CS (30ul)
 #define MY_RF69_IRQ_PIN (32ul)
 #define MY_RF69_IRQ_NUM (32ul)
+#define MY_RF69_RESET (43ul)
+#define MY_RF69_DIO5 (42ul)
 #define MY_RF24_CE_PIN (34ul)
 #define MY_RF24_CS_PIN (29ul)
 #define MY_RF24_IRQ_PIN (31ul)
