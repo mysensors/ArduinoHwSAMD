@@ -38,6 +38,6 @@ mysensors_gw_native.build.variant=mysensors_gw
 mysensors_gw_native.build.variant_system_lib=
 mysensors_gw_native.build.vid=0x1209
 mysensors_gw_native.build.pid=0x6949
-mysensors_gw_native.build.arch=samd
+mysensors_gw_native.build.arch=SAMD
 mysensors_gw_native.bootloader.tool=openocd
 mysensors_gw_native.bootloader.file=mysensors_gw/samd21_sam_ba.bin
