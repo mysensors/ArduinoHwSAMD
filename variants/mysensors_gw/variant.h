@@ -135,30 +135,32 @@ static const uint8_t A5 = PIN_A5;
  */
 #define SPI_INTERFACES_COUNT 3
 
-// SPI
-#define PIN_SPI_MISO (27u)
-#define PIN_SPI_MOSI (26u)
-#define PIN_SPI_SCK (28u)
-#define PIN_SPI_SS (PIN_A2)
-#define PERIPH_SPI sercom1
-#define PAD_SPI_TX SPI_PAD_0_SCK_1
-#define PAD_SPI_RX SERCOM_RX_PAD_2
-static const uint8_t SS =
-    PIN_SPI_SS; // SPI Slave SS not used. Set here only for reference.
-static const uint8_t MOSI = PIN_SPI_MOSI;
-static const uint8_t MISO = PIN_SPI_MISO;
-static const uint8_t SCK = PIN_SPI_SCK;
-
-// SPI1: Connected to W5100
-#define PIN_SPI1_MISO (22u)
-#define PIN_SPI1_MOSI (21u)
-#define PIN_SPI1_SCK (23u)
-#define PERIPH_SPI1 sercom4
+// SPI1
+#define PIN_SPI1_MISO (27u)
+#define PIN_SPI1_MOSI (26u)
+#define PIN_SPI1_SCK (28u)
+#define PIN_SPI1_SS (PIN_A2)
+#define PERIPH_SPI1 sercom1
 #define PAD_SPI1_TX SPI_PAD_0_SCK_1
 #define PAD_SPI1_RX SERCOM_RX_PAD_2
+static const uint8_t SS1 =
+    PIN_SPI1_SS; // SPI Slave SS not used. Set here only for reference.
 static const uint8_t MOSI1 = PIN_SPI1_MOSI;
 static const uint8_t MISO1 = PIN_SPI1_MISO;
 static const uint8_t SCK1 = PIN_SPI1_SCK;
+
+// SPI0: Connected to W5100
+#define PIN_SPI_MISO (22u)
+#define PIN_SPI_MOSI (21u)
+#define PIN_SPI_SCK (23u)
+#define PIN_SPI_SS (24u)
+#define PERIPH_SPI sercom4
+#define PAD_SPI_TX SPI_PAD_0_SCK_1
+#define PAD_SPI_RX SERCOM_RX_PAD_2
+static const uint8_t SS   = PIN_SPI_SS;
+static const uint8_t MOSI = PIN_SPI_MOSI;
+static const uint8_t MISO = PIN_SPI_MISO;
+static const uint8_t SCK = PIN_SPI_SCK;
 
 // SPI2: Connected to MysX
 #define PIN_SPI2_MISO (11u)
@@ -171,7 +173,8 @@ static const uint8_t MOSI2 = PIN_SPI2_MOSI;
 static const uint8_t MISO2 = PIN_SPI2_MISO;
 static const uint8_t SCK2 = PIN_SPI2_SCK;
 
-#define SPI_ETH SPI1
+#define RFM69_SPI SPI1
+#define SDCARD_SPI SPI1
 #define SPI_USER SPI2
 
 /*
