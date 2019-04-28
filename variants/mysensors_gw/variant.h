@@ -173,6 +173,7 @@ static const uint8_t MOSI2 = PIN_SPI2_MOSI;
 static const uint8_t MISO2 = PIN_SPI2_MISO;
 static const uint8_t SCK2 = PIN_SPI2_SCK;
 
+#define RF24_SPI SPI1
 #define RFM69_SPI SPI1
 #define SDCARD_SPI SPI1
 #define SPI_USER SPI2
