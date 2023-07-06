@@ -1,2 +1,5 @@
 *.bak
 *~
+*.bz2
+
+bootloaders/*/build/
